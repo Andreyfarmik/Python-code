@@ -1,0 +1,8 @@
+a = int(input("Введите число: "))
+n = int(input("Введите степень возведения: "))
+def degree(a, n):
+    if (n == 1):
+        return (a)
+    if (n != 1):
+        return (a * degree(a, n - 1))
+print("Результат возведения равен:", degree(a, n))
