@@ -1,0 +1,5 @@
+#an = a1 + (n-1) * d.
+def arithmetic_progression(first: int,
+                           diff: int,
+                           quantity: int) -> list[int]:
+    return(first + i * diff for i in range(quantity))
