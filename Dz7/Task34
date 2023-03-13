@@ -1,0 +1,10 @@
+voice = print(input("Введите текст песни "))
+voice = str(voice)
+def song(motive):
+    str = motive.lower().split()
+    f = lambda x: sum(1 for i in x if i in 'аоуыэеёиюя')
+    tmp = f(str[0])
+    if all([f(i) == tmp for i in str]):
+        return 'Парам пам-пам'
+    return 'Пам парам'
+print(song(voice))
