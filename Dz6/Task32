@@ -1,0 +1,8 @@
+def is_in_mass(num_lst: list[int],
+               min_num: int,
+               max_num: int) -> list[int]:
+    indecies = list()
+    for index, number in enumerate(num_lst):
+        if min_num <= number <= max_num:
+            indecies.append(index)
+    return indecies
