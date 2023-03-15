@@ -1,0 +1,7 @@
+string = input("Введите 'ключ_n=значение_n:_")
+string = string.split('=')
+Arr = []
+for i in range(len(string)):
+    Arr.append(tuple(map(str, string[i].split())))
+Arr = tuple(Arr)
+print(Arr)
