@@ -1,0 +1,40 @@
+import os
+from time import sleep
+import Task38func
+def main():
+    FILENAME = data.txt
+    while True:
+        os.system('cls')
+        print('Телефонный справочник \n'
+            'Введите 1 для вывода всей информации \n'
+            'Введите 2 для добавления нового контакта \n'
+            'Введите 3 для поиска контакта \n'
+            'Введите 4 для изменения информации контакта \n'
+            'Введите 5 для удоления контакта \n'
+            'Введите 0для выхода')
+        try:
+            mode = int(input('Выберите режим: '))
+            if mode ==1:
+                Task38func.show_data(FILENAME)
+                sleep(3)
+            elif mode ==2:
+                Task38func.new_data(FILENAME)
+                sleep(1)
+            elif mode ==3:
+                Task38func.search_data(FILENAME)
+                sleep(3)
+            elif mode ==4:
+                Task38func.edit_data(FILENAME)
+                sleep(2)
+            elif mode ==5:
+                Task38func.delite_data(FILENAME)
+                sleep(1)
+            elif mode ==0:
+                print('Всего доброго!!!')
+                break
+        except ValueError:
+            print('Ошибка ввода')
+            sleep(1)
+
+if __name__ == '__main__':
+        main()
